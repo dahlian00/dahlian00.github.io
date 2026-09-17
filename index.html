@@ -117,7 +117,12 @@
   <section class="section">
     <div class="wrap">
 
-      <ol class="pub-list">
+      <div class="pub-filter" id="pubFilter" role="tablist">
+        <button type="button" class="pub-filter-btn is-active" data-filter="featured" role="tab" aria-selected="true">Featured</button>
+        <button type="button" class="pub-filter-btn" data-filter="all" role="tab" aria-selected="false">All</button>
+      </div>
+
+      <ol class="pub-list filter-featured" id="pubList">
 
         <li class="pub">
           <div class="pub-thumb"><img src="img/pub-doego.png" alt="Do Egocentric Video-Language Models... teaser"></div>
@@ -129,7 +134,7 @@
           </div>
         </li>
 
-        <li class="pub">
+        <li class="pub not-featured">
           <div class="pub-thumb"><img src="img/pub-mes.png" alt="MES-Bench teaser"></div>
           <div class="pub-body">
             <p class="pub-title">MES-Bench: A Benchmark for Multimodal Elaborative Simplification and Comprehensibility Evaluation</p>
@@ -139,7 +144,7 @@
           </div>
         </li>
 
-        <li class="pub">
+        <li class="pub not-featured">
           <div class="pub-thumb"><img src="img/pub-physically.png" alt="Physically Plausible HOI teaser"></div>
           <div class="pub-body">
             <p class="pub-title">Physically Plausible Human-Object Interaction Generation via Attribute Classifier Guidance</p>
@@ -299,7 +304,7 @@
           </div>
         </li>
 
-        <li class="pub">
+        <li class="pub not-featured">
           <div class="pub-thumb"><img src="img/pub-neuraldataset.png" alt="Exploring the Potential of Neural Dataset Search teaser"></div>
           <div class="pub-body">
             <p class="pub-title">Exploring the Potential of Neural Dataset Search</p>
@@ -309,7 +314,7 @@
           </div>
         </li>
 
-        <li class="pub">
+        <li class="pub not-featured">
           <div class="pub-thumb"><img src="img/pub-tomato.png" alt="Transformer-based Ripeness Segmentation teaser"></div>
           <div class="pub-body">
             <p class="pub-title">Transformer-based Ripeness Segmentation for Tomatoes</p>

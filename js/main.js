@@ -14,4 +14,20 @@ document.addEventListener("DOMContentLoaded", function () {
       toggle.setAttribute("aria-expanded", "false");
     });
   });
+
+  var pubFilter = document.getElementById("pubFilter");
+  var pubList = document.getElementById("pubList");
+  if (!pubFilter || !pubList) return;
+
+  pubFilter.querySelectorAll(".pub-filter-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      pubFilter.querySelectorAll(".pub-filter-btn").forEach(function (b) {
+        b.classList.remove("is-active");
+        b.setAttribute("aria-selected", "false");
+      });
+      btn.classList.add("is-active");
+      btn.setAttribute("aria-selected", "true");
+      pubList.classList.toggle("filter-featured", btn.dataset.filter === "featured");
+    });
+  });
 });
