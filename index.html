@@ -10,11 +10,12 @@
 <meta property="og:title" content="Risa Shinoda">
 <meta property="og:description" content="Assistant Professor, Yoichi Sato Lab, University of Tokyo. Computer vision for agriculture and animal ecology.">
 <meta property="og:type" content="website">
+<meta property="og:image" content="img/profile.jpg">
 
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -28,11 +29,10 @@
       <span></span><span></span><span></span>
     </button>
     <nav class="site-nav" id="siteNav">
-      <a href="#about">About</a>
+      <a href="#about">About Me</a>
       <a href="#news">News</a>
       <a href="#publications">Publications</a>
-      <a href="#experience">Experience</a>
-      <a href="#awards">Awards &amp; Service</a>
+      <a href="#cv">CV</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -43,54 +43,62 @@
   <section class="about" id="about">
     <div class="wrap about-grid">
       <div class="about-side">
-        <div class="avatar" aria-hidden="true">
-          <img src="img/profile.jpg" alt="" class="avatar-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="avatar">
+          <img src="img/profile.jpg" alt="Photo of Risa Shinoda" class="avatar-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="avatar-fallback">RS</div>
         </div>
         <p class="role">Assistant Professor</p>
-        <p class="affil"><a href="https://www.ut-vision.org/">Yoichi Sato Lab</a>, University of Tokyo</p>
-        <p class="mail">rshinoda <span class="at">[at]</span> iis.u-tokyo.ac.jp</p>
+        <p class="affil"><a href="https://www.ut-vision.org/">Yoichi Sato Lab</a><br>University of Tokyo</p>
+        <p class="mail">Email: <i>rshinoda <span class="at">AT</span> iis.u-tokyo.ac.jp</i></p>
 
-        <ul class="link-list">
-          <li><a href="https://drive.google.com/file/d/12DYkDBcswjQWK3Bf0SQ1dicBLN38KNuM/view?usp=sharing">CV</a></li>
-          <li><a href="https://scholar.google.co.jp/citations?user=DSr8YcMAAAAJ&amp;hl=en">Google Scholar</a></li>
-          <li><a href="https://twitter.com/dahlian0">Twitter / X</a></li>
-          <li><a href="https://www.linkedin.com/in/risa-shinoda/">LinkedIn</a></li>
-        </ul>
+        <div class="social-icons">
+          <a href="https://scholar.google.co.jp/citations?user=DSr8YcMAAAAJ&amp;hl=en" title="Google Scholar" class="social-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.5 3.5V19l7.5 5 7.5-5v-6l2-1.55V17h2V9.5L12 0z"/></svg>
+          </a>
+          <a href="https://twitter.com/dahlian0" title="Twitter / X" class="social-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/risa-shinoda/" title="LinkedIn" class="social-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+          </a>
+          <a href="https://drive.google.com/file/d/12DYkDBcswjQWK3Bf0SQ1dicBLN38KNuM/view?usp=sharing" title="CV" class="social-icon social-icon-text">CV</a>
+        </div>
       </div>
 
       <div class="about-main">
-        <p class="eyebrow">About</p>
         <h1>Risa Shinoda <span class="jp">篠田理沙</span></h1>
 
-        <p class="lede">
+        <p>
           I am an Assistant Professor at the <a href="https://www.ut-vision.org/">Yoichi Sato Lab</a>,
-          University of Tokyo. I received my Ph.D. in Agricultural Engineering from Kyoto University in 2025,
-          M.S. in Agricultural Engineering in 2022, and B.S. in Agricultural Engineering in 2020, all from Kyoto University.
+          <a href="https://www.u-tokyo.ac.jp/en/">University of Tokyo</a>. My research applies computer
+          vision to agriculture and animal ecology — building datasets and benchmarks for species and
+          individual identification, vision&ndash;language models for agricultural understanding, and
+          multimodal (visual, textual, and acoustic) learning from biological data.
         </p>
 
         <p>
-          My research applies computer vision to agriculture and animal ecology — building datasets and
-          benchmarks for species and individual identification, vision&ndash;language models for
-          agricultural understanding, and multimodal (visual, textual, and acoustic) learning from
-          biological data.
+          I completed my Ph.D. in Agricultural Engineering at <a href="https://www.kyoto-u.ac.jp/en">Kyoto University</a>
+          in 2025, and my M.S. (2022) and B.S. (2020) in the same department.
         </p>
 
-        <p class="interests">
-          <strong>Research interests:</strong>
-          animal identification &amp; recognition ·
-          agricultural computer vision ·
-          vision&ndash;language models ·
-          multimodal (visual&ndash;textual&ndash;acoustic) learning ·
-          dataset &amp; benchmark construction
-        </p>
+        <h3 class="inline-heading">Research interests:</h3>
+        <ul class="disc-list">
+          <li>Animal identification &amp; recognition</li>
+          <li>Agricultural computer vision</li>
+          <li>Vision&ndash;language models</li>
+          <li>Multimodal (visual&ndash;textual&ndash;acoustic) learning</li>
+          <li>Dataset &amp; benchmark construction</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section class="section news" id="news">
+  <hr class="rule">
+  <h2 class="section-title" id="news">News</h2>
+  <hr class="rule">
+
+  <section class="section">
     <div class="wrap">
-      <h2><span class="num">01</span>News</h2>
       <ul class="news-list">
         <li><time datetime="2026-08-21">2026.08.21</time><span>One co-authored paper has been accepted to <strong>EMNLP 2026</strong> (Main).</span></li>
         <li><time datetime="2026-04-10">2026.04.10</time><span>Our <strong>BioVITA</strong> has been selected as a <strong>CVPR 2026 Highlight</strong>.</span></li>
@@ -105,144 +113,192 @@
     </div>
   </section>
 
-  <section class="section publications" id="publications">
-    <div class="wrap">
-      <h2><span class="num">02</span>Publications</h2>
+  <hr class="rule">
+  <h2 class="section-title" id="publications">Publications</h2>
+  <hr class="rule">
 
-      <h3 class="sub-heading">Selected (first-author)</h3>
+  <section class="section">
+    <div class="wrap">
+
+      <h3 class="sub-heading">Selected (first author)</h3>
       <ol class="pub-list">
 
         <li class="pub">
-          <p class="pub-title">BioVITA: Biological Dataset, Model, and Benchmark for Visual&ndash;Textual&ndash;Acoustic Alignment</p>
-          <p class="pub-authors"><strong>Risa Shinoda</strong>, Kaede Shiohara, Nakamasa Inoue, Kuniaki Saito, Hiroaki Santo, Fumio Okura</p>
-          <p class="pub-venue">CVPR 2026 <span class="tag tag-highlight">Highlight</span></p>
-          <p class="pub-links"><a href="https://arxiv.org/abs/2603.23883">Paper</a><a href="https://dahlian00.github.io/BioVITA_Page/">Project</a></p>
+          <div class="pub-thumb"><img src="img/pub-biovita.png" alt="BioVITA teaser"></div>
+          <div class="pub-body">
+            <p class="pub-title">BioVITA: Biological Dataset, Model, and Benchmark for Visual&ndash;Textual&ndash;Acoustic Alignment</p>
+            <p class="pub-authors"><span class="me">Risa Shinoda</span>, Kaede Shiohara, Nakamasa Inoue, Kuniaki Saito, Hiroaki Santo, Fumio Okura</p>
+            <p class="pub-venue">CVPR 2026 <span class="tag tag-highlight">Highlight</span></p>
+            <p class="pub-links"><a href="https://arxiv.org/abs/2603.23883">Paper</a><a href="https://dahlian00.github.io/BioVITA_Page/">Project</a></p>
+          </div>
         </li>
 
         <li class="pub">
-          <p class="pub-title">AnimalCLAP: Taxonomy-Aware Language&ndash;Audio Pretraining for Species Recognition</p>
-          <p class="pub-authors"><strong>Risa Shinoda</strong>, Kaede Shiohara, Nakamasa Inoue, Hiroaki Santo, Fumio Okura</p>
-          <p class="pub-venue">ICASSP 2026</p>
-          <p class="pub-links"><a href="https://arxiv.org/abs/2603.22053">Paper</a><a href="https://dahlian00.github.io/AnimalCLAP_Page/">Project</a></p>
+          <div class="pub-thumb"><img src="img/pub-animalclap.png" alt="AnimalCLAP teaser"></div>
+          <div class="pub-body">
+            <p class="pub-title">AnimalCLAP: Taxonomy-Aware Language&ndash;Audio Pretraining for Species Recognition</p>
+            <p class="pub-authors"><span class="me">Risa Shinoda</span>, Kaede Shiohara, Nakamasa Inoue, Hiroaki Santo, Fumio Okura</p>
+            <p class="pub-venue">ICASSP 2026</p>
+            <p class="pub-links"><a href="https://arxiv.org/abs/2603.22053">Paper</a><a href="https://dahlian00.github.io/AnimalCLAP_Page/">Project</a></p>
+          </div>
         </li>
 
         <li class="pub">
-          <p class="pub-title">AnimalClue: Recognizing Animals by their Traces</p>
-          <p class="pub-authors"><strong>Risa Shinoda</strong>, Nakamasa Inoue, Iro Laina, Christian Rupprecht, Hirokatsu Kataoka</p>
-          <p class="pub-venue">ICCV 2025 <span class="tag tag-highlight">Highlight</span></p>
-          <p class="pub-links"><a href="https://arxiv.org/abs/2507.20240">Paper</a><a href="https://dahlian00.github.io/AnimalCluePage/">Project</a></p>
+          <div class="pub-thumb"><img src="img/pub-animalclue.png" alt="AnimalClue teaser"></div>
+          <div class="pub-body">
+            <p class="pub-title">AnimalClue: Recognizing Animals by their Traces</p>
+            <p class="pub-authors"><span class="me">Risa Shinoda</span>, Nakamasa Inoue, Iro Laina, Christian Rupprecht, Hirokatsu Kataoka</p>
+            <p class="pub-venue">ICCV 2025 <span class="tag tag-highlight">Highlight</span></p>
+            <p class="pub-links"><a href="https://arxiv.org/abs/2507.20240">Paper</a><a href="https://dahlian00.github.io/AnimalCluePage/">Project</a></p>
+          </div>
         </li>
 
         <li class="pub">
-          <p class="pub-title">AgroBench: Vision&ndash;Language Model Benchmark in Agriculture</p>
-          <p class="pub-authors"><strong>Risa Shinoda</strong>, Nakamasa Inoue, Hirokatsu Kataoka, Masaki Onishi, Yoshitaka Ushiku</p>
-          <p class="pub-venue">ICCV 2025</p>
-          <p class="pub-links"><a href="http://arxiv.org/abs/2507.20519">Paper</a><a href="https://dahlian00.github.io/AgroBenchPage/">Project</a></p>
+          <div class="pub-thumb"><img src="img/pub-agrobench.png" alt="AgroBench teaser"></div>
+          <div class="pub-body">
+            <p class="pub-title">AgroBench: Vision&ndash;Language Model Benchmark in Agriculture</p>
+            <p class="pub-authors"><span class="me">Risa Shinoda</span>, Nakamasa Inoue, Hirokatsu Kataoka, Masaki Onishi, Yoshitaka Ushiku</p>
+            <p class="pub-venue">ICCV 2025</p>
+            <p class="pub-links"><a href="http://arxiv.org/abs/2507.20519">Paper</a><a href="https://dahlian00.github.io/AgroBenchPage/">Project</a></p>
+          </div>
         </li>
 
         <li class="pub">
-          <p class="pub-title">SBS Figures: Pre-training Figure QA from Stage-by-Stage Synthesized Images</p>
-          <p class="pub-authors"><strong>Risa Shinoda</strong>, Kuniaki Saito, Shohei Tanaka, Tosho Hirasawa, Yoshitaka Ushiku</p>
-          <p class="pub-venue">AAAI Workshop on Document Understanding and Intelligence, 2025</p>
-          <p class="pub-links"><a href="https://arxiv.org/abs/2412.17606">Paper</a><a href="https://omron-sinicx.github.io/SBSFiguresPage/">Project</a></p>
+          <div class="pub-thumb"><img src="img/pub-sbsfigures.png" alt="SBS Figures teaser"></div>
+          <div class="pub-body">
+            <p class="pub-title">SBS Figures: Pre-training Figure QA from Stage-by-Stage Synthesized Images</p>
+            <p class="pub-authors"><span class="me">Risa Shinoda</span>, Kuniaki Saito, Shohei Tanaka, Tosho Hirasawa, Yoshitaka Ushiku</p>
+            <p class="pub-venue">AAAI Workshop on Document Understanding and Intelligence, 2025</p>
+            <p class="pub-links"><a href="https://arxiv.org/abs/2412.17606">Paper</a><a href="https://omron-sinicx.github.io/SBSFiguresPage/">Project</a></p>
+          </div>
         </li>
 
         <li class="pub">
-          <p class="pub-title">PetFace: A Large-Scale Dataset and Benchmark for Animal Identification</p>
-          <p class="pub-authors"><strong>Risa Shinoda</strong>*, Kaede Shiohara* <span class="eq">(*co-first author)</span></p>
-          <p class="pub-venue">ECCV 2024 <span class="tag">Oral</span></p>
-          <p class="pub-links"><a href="https://arxiv.org/abs/2407.13555">Paper</a><a href="https://dahlian00.github.io/PetFacePage/">Project</a></p>
+          <div class="pub-thumb"><img src="img/pub-petface.png" alt="PetFace teaser"></div>
+          <div class="pub-body">
+            <p class="pub-title">PetFace: A Large-Scale Dataset and Benchmark for Animal Identification</p>
+            <p class="pub-authors"><span class="me">Risa Shinoda</span>*, Kaede Shiohara* <span class="eq">(*co-first author)</span></p>
+            <p class="pub-venue">ECCV 2024 <span class="tag">Oral</span></p>
+            <p class="pub-links"><a href="https://arxiv.org/abs/2407.13555">Paper</a><a href="https://dahlian00.github.io/PetFacePage/">Project</a></p>
+          </div>
         </li>
 
         <li class="pub">
-          <p class="pub-title">OpenAnimalTracks: A Dataset for Animal Track Recognition</p>
-          <p class="pub-authors"><strong>Risa Shinoda</strong>*, Kaede Shiohara* <span class="eq">(*co-first author)</span></p>
-          <p class="pub-venue">ICIP 2024</p>
-          <p class="pub-links"><a href="https://arxiv.org/abs/2406.09647">Paper</a></p>
+          <div class="pub-thumb"><img src="img/pub-openanimaltracks.png" alt="OpenAnimalTracks teaser"></div>
+          <div class="pub-body">
+            <p class="pub-title">OpenAnimalTracks: A Dataset for Animal Track Recognition</p>
+            <p class="pub-authors"><span class="me">Risa Shinoda</span>*, Kaede Shiohara* <span class="eq">(*co-first author)</span></p>
+            <p class="pub-venue">ICIP 2024</p>
+            <p class="pub-links"><a href="https://arxiv.org/abs/2406.09647">Paper</a></p>
+          </div>
         </li>
 
-        <li class="pub">
-          <p class="pub-title">SegRCDB: Semantic Segmentation via Formula-Driven Supervised Learning</p>
-          <p class="pub-authors"><strong>Risa Shinoda</strong>, Ryo Hayamizu, Kodai Nakashima, Nakamasa Inoue, Rio Yokota, Hirokatsu Kataoka</p>
-          <p class="pub-venue">ICCV 2023</p>
-          <p class="pub-links"><a href="https://openaccess.thecvf.com/content/ICCV2023/html/Shinoda_SegRCDB_Semantic_Segmentation_via_Formula-Driven_Supervised_Learning_ICCV_2023_paper.html">Paper</a><a href="https://dahlian00.github.io/SegRCDBPage/">Project</a></p>
+        <li class="pub pub-no-thumb">
+          <div class="pub-body">
+            <p class="pub-title">SegRCDB: Semantic Segmentation via Formula-Driven Supervised Learning</p>
+            <p class="pub-authors"><span class="me">Risa Shinoda</span>, Ryo Hayamizu, Kodai Nakashima, Nakamasa Inoue, Rio Yokota, Hirokatsu Kataoka</p>
+            <p class="pub-venue">ICCV 2023</p>
+            <p class="pub-links"><a href="https://openaccess.thecvf.com/content/ICCV2023/html/Shinoda_SegRCDB_Semantic_Segmentation_via_Formula-Driven_Supervised_Learning_ICCV_2023_paper.html">Paper</a><a href="https://dahlian00.github.io/SegRCDBPage/">Project</a></p>
+          </div>
         </li>
 
-        <li class="pub">
-          <p class="pub-title">RoseTracker: a system for automated rose growth monitoring</p>
-          <p class="pub-authors"><strong>Risa Shinoda</strong>*, Ko Motoki* <span class="eq">(*equal contribution)</span>, Kensho Hara, Hirokatsu Kataoka, Ryohei Nakano, Tetsuya Nakazaki, Ryozo Noguchi</p>
-          <p class="pub-venue">Smart Agricultural Technology (Elsevier), 2023 <span class="tag tag-quiet">IF 6.3</span></p>
-          <p class="pub-links"><a href="https://doi.org/10.1016/j.atech.2023.100271">Paper</a><a href="https://drive.google.com/file/d/1DBtgkKcKlUVENy7riisjfB0aUEmlagF5/view?usp=sharing">Poster</a></p>
+        <li class="pub pub-no-thumb">
+          <div class="pub-body">
+            <p class="pub-title">RoseTracker: a system for automated rose growth monitoring</p>
+            <p class="pub-authors"><span class="me">Risa Shinoda</span>*, Ko Motoki* <span class="eq">(*equal contribution)</span>, Kensho Hara, Hirokatsu Kataoka, Ryohei Nakano, Tetsuya Nakazaki, Ryozo Noguchi</p>
+            <p class="pub-venue">Smart Agricultural Technology (Elsevier), 2023 <span class="tag tag-quiet">IF 6.3</span></p>
+            <p class="pub-links"><a href="https://doi.org/10.1016/j.atech.2023.100271">Paper</a><a href="https://drive.google.com/file/d/1DBtgkKcKlUVENy7riisjfB0aUEmlagF5/view?usp=sharing">Poster</a></p>
+          </div>
         </li>
 
-        <li class="pub">
-          <p class="pub-title">Transformer-based Ripeness Segmentation for Tomatoes</p>
-          <p class="pub-authors"><strong>Risa Shinoda</strong>, Kensho Hara, Hirokatsu Kataoka, Ryozo Noguchi</p>
-          <p class="pub-venue">Smart Agricultural Technology (Elsevier), 2023 <span class="tag tag-quiet">IF 6.3</span></p>
-          <p class="pub-links"><a href="https://doi.org/10.1016/j.atech.2023.100196">Paper</a></p>
+        <li class="pub pub-no-thumb">
+          <div class="pub-body">
+            <p class="pub-title">Transformer-based Ripeness Segmentation for Tomatoes</p>
+            <p class="pub-authors"><span class="me">Risa Shinoda</span>, Kensho Hara, Hirokatsu Kataoka, Ryozo Noguchi</p>
+            <p class="pub-venue">Smart Agricultural Technology (Elsevier), 2023 <span class="tag tag-quiet">IF 6.3</span></p>
+            <p class="pub-links"><a href="https://doi.org/10.1016/j.atech.2023.100196">Paper</a></p>
+          </div>
         </li>
 
       </ol>
 
       <h3 class="sub-heading">Co-authored</h3>
-      <ol class="pub-list pub-list-compact">
+      <ol class="pub-list">
 
-        <li class="pub">
-          <p class="pub-title">Interaction-via-Actions: Cattle Interaction Detection with Joint Learning</p>
-          <p class="pub-authors">Ren Nakagawa, Yang Yang, <strong>Risa Shinoda</strong>, Hiroaki Santo, Kenji Oyama, Fumio Okura, Takenao Ohkawa</p>
-          <p class="pub-venue">WACV 2026</p>
-          <p class="pub-links"><a href="https://arxiv.org/abs/2512.16133">Paper</a></p>
+        <li class="pub pub-no-thumb">
+          <div class="pub-body">
+            <p class="pub-title">Interaction-via-Actions: Cattle Interaction Detection with Joint Learning</p>
+            <p class="pub-authors">Ren Nakagawa, Yang Yang, <span class="me">Risa Shinoda</span>, Hiroaki Santo, Kenji Oyama, Fumio Okura, Takenao Ohkawa</p>
+            <p class="pub-venue">WACV 2026</p>
+            <p class="pub-links"><a href="https://arxiv.org/abs/2512.16133">Paper</a></p>
+          </div>
         </li>
 
-        <li class="pub">
-          <p class="pub-title">Zero-shot Hierarchical Plant Segmentation via Foundation Segmentation Models</p>
-          <p class="pub-authors">Junhao Xing, Ryohei Miyakawa, Yang Yang, Xinpeng Liu, <strong>Risa Shinoda</strong>, Hiroaki Santo, Yosuke Toda, Fumio Okura</p>
-          <p class="pub-venue">WACV 2026</p>
-          <p class="pub-links"><a href="https://arxiv.org/abs/2509.09116">Paper</a></p>
+        <li class="pub pub-no-thumb">
+          <div class="pub-body">
+            <p class="pub-title">Zero-shot Hierarchical Plant Segmentation via Foundation Segmentation Models</p>
+            <p class="pub-authors">Junhao Xing, Ryohei Miyakawa, Yang Yang, Xinpeng Liu, <span class="me">Risa Shinoda</span>, Hiroaki Santo, Yosuke Toda, Fumio Okura</p>
+            <p class="pub-venue">WACV 2026</p>
+            <p class="pub-links"><a href="https://arxiv.org/abs/2509.09116">Paper</a></p>
+          </div>
         </li>
 
-        <li class="pub">
-          <p class="pub-title">MES-Bench: A Benchmark for Multimodal Elaborative Simplification and Comprehensibility Evaluation</p>
-          <p class="pub-authors">Martyna Gruszka, <strong>Risa Shinoda</strong>, Taiki Miyanishi, Takumi Hirose, Nakamasa Inoue</p>
-          <p class="pub-venue">CVPR Workshop (CV4Edu), 2026</p>
-          <p class="pub-links"><a href="https://openaccess.thecvf.com/content/CVPR2026W/CV4Edu/html/Gruszka_MES-Bench_A_Benchmark_for_Multimodal_Elaborative_Simplification_and_Comprehensibility_Evaluation_CVPRW_2026_paper.html">Paper</a></p>
+        <li class="pub pub-no-thumb">
+          <div class="pub-body">
+            <p class="pub-title">MES-Bench: A Benchmark for Multimodal Elaborative Simplification and Comprehensibility Evaluation</p>
+            <p class="pub-authors">Martyna Gruszka, <span class="me">Risa Shinoda</span>, Taiki Miyanishi, Takumi Hirose, Nakamasa Inoue</p>
+            <p class="pub-venue">CVPR Workshop (CV4Edu), 2026</p>
+            <p class="pub-links"><a href="https://openaccess.thecvf.com/content/CVPR2026W/CV4Edu/html/Gruszka_MES-Bench_A_Benchmark_for_Multimodal_Elaborative_Simplification_and_Comprehensibility_Evaluation_CVPRW_2026_paper.html">Paper</a></p>
+          </div>
         </li>
 
-        <li class="pub">
-          <p class="pub-title">Masks-to-Skeleton: Multi-View Mask-Based Tree Skeleton Extraction</p>
-          <p class="pub-authors">Xinpeng Liu, Kanyu Xu, <strong>Risa Shinoda</strong>, Hiroaki Santo, Fumio Okura</p>
-          <p class="pub-venue">Sensors, 2025</p>
-          <p class="pub-links"><a href="https://www.mdpi.com/1424-8220/25/14/4354">Paper</a></p>
+        <li class="pub pub-no-thumb">
+          <div class="pub-body">
+            <p class="pub-title">Masks-to-Skeleton: Multi-View Mask-Based Tree Skeleton Extraction</p>
+            <p class="pub-authors">Xinpeng Liu, Kanyu Xu, <span class="me">Risa Shinoda</span>, Hiroaki Santo, Fumio Okura</p>
+            <p class="pub-venue">Sensors, 2025</p>
+            <p class="pub-links"><a href="https://www.mdpi.com/1424-8220/25/14/4354">Paper</a></p>
+          </div>
         </li>
 
-        <li class="pub">
-          <p class="pub-title">Talking with Actionsbits: A Part-Enhanced VLM for Action Recognition</p>
-          <p class="pub-authors">Yang Yang, Ren Nakagawa, <strong>Risa Shinoda</strong>, Hiroaki Santo, Kenji Oyama, Takenao Ohkawa, Fumio Okura</p>
-          <p class="pub-venue">Sensors, 2026 <span class="tag tag-quiet">IF 3.5</span></p>
-          <p class="pub-links"><a href="https://www.mdpi.com/1424-8220/26/6/1969">Paper</a></p>
+        <li class="pub pub-no-thumb">
+          <div class="pub-body">
+            <p class="pub-title">Talking with Actionsbits: A Part-Enhanced VLM for Action Recognition</p>
+            <p class="pub-authors">Yang Yang, Ren Nakagawa, <span class="me">Risa Shinoda</span>, Hiroaki Santo, Kenji Oyama, Takenao Ohkawa, Fumio Okura</p>
+            <p class="pub-venue">Sensors, 2026 <span class="tag tag-quiet">IF 3.5</span></p>
+            <p class="pub-links"><a href="https://www.mdpi.com/1424-8220/26/6/1969">Paper</a></p>
+          </div>
         </li>
 
-        <li class="pub">
-          <p class="pub-title">AnimalTracks-17: A Dataset for Animal Track Recognition</p>
-          <p class="pub-authors">Kaede Shiohara*, <strong>Risa Shinoda</strong>* <span class="eq">(*equal contribution)</span></p>
-          <p class="pub-venue">CVPR Workshop (CV4Animals), 2023</p>
+        <li class="pub pub-no-thumb">
+          <div class="pub-body">
+            <p class="pub-title">AnimalTracks-17: A Dataset for Animal Track Recognition</p>
+            <p class="pub-authors">Kaede Shiohara*, <span class="me">Risa Shinoda</span>* <span class="eq">(*equal contribution)</span></p>
+            <p class="pub-venue">CVPR Workshop (CV4Animals), 2023</p>
+          </div>
         </li>
 
-        <li class="pub">
-          <p class="pub-title">Exploring the Potential of Neural Dataset Search</p>
-          <p class="pub-authors">Ryosuke Yamada*, <strong>Risa Shinoda</strong>* <span class="eq">(*equal contribution)</span>, Hirokatsu Kataoka</p>
-          <p class="pub-venue">CVPR Workshop (NAS), 2023</p>
-          <p class="pub-links"><a href="https://openaccess.thecvf.com/content/CVPR2023W/NAS/html/Yamada_Exploring_the_Potential_of_Neural_Dataset_Search_CVPRW_2023_paper.html">Paper</a></p>
+        <li class="pub pub-no-thumb">
+          <div class="pub-body">
+            <p class="pub-title">Exploring the Potential of Neural Dataset Search</p>
+            <p class="pub-authors">Ryosuke Yamada*, <span class="me">Risa Shinoda</span>* <span class="eq">(*equal contribution)</span>, Hirokatsu Kataoka</p>
+            <p class="pub-venue">CVPR Workshop (NAS), 2023</p>
+            <p class="pub-links"><a href="https://openaccess.thecvf.com/content/CVPR2023W/NAS/html/Yamada_Exploring_the_Potential_of_Neural_Dataset_Search_CVPRW_2023_paper.html">Paper</a></p>
+          </div>
         </li>
 
       </ol>
     </div>
   </section>
 
-  <section class="section two-col" id="experience">
+  <hr class="rule">
+  <h2 class="section-title" id="cv">Experience &amp; Education</h2>
+  <hr class="rule">
+
+  <section class="section">
     <div class="wrap two-col-grid">
       <div>
-        <h2><span class="num">03</span>Experience</h2>
+        <h3 class="sub-heading">Experience</h3>
         <ul class="timeline">
           <li><span class="tl-date">2023.11&ndash;2025.03</span><span class="tl-body"><strong>OMRON SINIC X</strong> — Research Internship</span></li>
           <li><span class="tl-date">2023.04&ndash;2025.06</span><span class="tl-body"><strong>Tokyo Institute of Technology</strong>, Shinoda Lab — Research Assistant</span></li>
@@ -256,20 +312,14 @@
       </div>
 
       <div>
-        <h2><span class="num">04</span>Education</h2>
+        <h3 class="sub-heading">Education</h3>
         <ul class="timeline">
           <li><span class="tl-date">2025</span><span class="tl-body"><strong>Ph.D., Agricultural Engineering</strong> — Kyoto University</span></li>
           <li><span class="tl-date">2022</span><span class="tl-body"><strong>M.S., Agricultural Engineering</strong> — Kyoto University</span></li>
           <li><span class="tl-date">2020</span><span class="tl-body"><strong>B.S., Agricultural Engineering</strong> — Kyoto University</span></li>
         </ul>
-      </div>
-    </div>
-  </section>
 
-  <section class="section two-col" id="awards">
-    <div class="wrap two-col-grid">
-      <div>
-        <h2><span class="num">05</span>Awards &amp; Grants</h2>
+        <h3 class="sub-heading">Awards &amp; Grants</h3>
         <ul class="plain-list">
           <li>Grant-in-Aid for Research Activity Start-up <span class="amt">¥2,730,000</span></li>
           <li>Kakusei Project, AIST, 2024 <span class="amt">¥3,000,000</span></li>
@@ -281,15 +331,18 @@
           <li>DoGS Travel Grant, Kyoto University, 2022 <span class="amt">¥355,000</span></li>
         </ul>
       </div>
+    </div>
 
+    <div class="wrap two-col-grid">
       <div>
-        <h2 class="sr-offset">Service &amp; Talks</h2>
         <h3 class="sub-heading">Program Committee</h3>
         <ul class="plain-list">
           <li>ICCV 2025 Workshop: Foundation Data for Industrial Tech Transfer</li>
           <li>ICCV 2023 Workshop: Representation Learning with Limited Images</li>
           <li>General Chair, CCC summer 2023 &amp; CCC winter 2022</li>
         </ul>
+      </div>
+      <div>
         <h3 class="sub-heading">Invited Talks</h3>
         <ul class="plain-list">
           <li>ECCV Instance-Level Recognition Workshop, 2024</li>
@@ -306,9 +359,9 @@
   <div class="wrap footer-inner">
     <div>
       <p class="footer-name">Risa Shinoda</p>
-      <p class="footer-mail">rshinoda <span class="at">[at]</span> iis.u-tokyo.ac.jp</p>
+      <p class="footer-mail">rshinoda <span class="at">AT</span> iis.u-tokyo.ac.jp</p>
     </div>
-    <ul class="link-list link-list-row">
+    <ul class="link-list-row">
       <li><a href="https://drive.google.com/file/d/12DYkDBcswjQWK3Bf0SQ1dicBLN38KNuM/view?usp=sharing">CV</a></li>
       <li><a href="https://scholar.google.co.jp/citations?user=DSr8YcMAAAAJ&amp;hl=en">Google Scholar</a></li>
       <li><a href="https://twitter.com/dahlian0">Twitter / X</a></li>
