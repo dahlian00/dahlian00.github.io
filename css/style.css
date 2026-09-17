@@ -371,6 +371,12 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; margin: 0; }
   gap: 48px;
   margin-bottom: 8px;
 }
+.stack-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  margin-bottom: 8px;
+}
 @media (max-width: 700px) {
   .two-col-grid { grid-template-columns: 1fr; gap: 8px; }
 }
