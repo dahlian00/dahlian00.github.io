@@ -319,10 +319,29 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; margin: 0; }
   margin: 0 0 6px;
 }
 .pub-authors { margin: 0 0 6px; font-size: .93rem; font-style: italic; color: var(--ink); }
-.me { text-decoration: underline; font-style: normal; }
+.me { text-decoration: underline; font-style: normal; font-weight: 700; }
 .eq { font-size: .85em; font-style: normal; color: var(--muted); }
 
-.pub-venue { margin: 0 0 10px; font-size: .9rem; color: var(--ink); }
+.pub-venue { margin: 0 0 10px; font-size: .9rem; font-weight: 700; color: var(--ink); }
+
+.pub-thumb { position: relative; }
+.top-conf-stamp {
+  position: absolute;
+  top: 12px;
+  left: -32px;
+  transform: rotate(-32deg);
+  background: rgba(255, 255, 255, .88);
+  color: #c81e1e;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-style: italic;
+  font-size: .66rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  padding: 3px 34px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+  pointer-events: none;
+}
 
 .tag {
   display: inline-block;
