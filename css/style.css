@@ -171,10 +171,10 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; margin: 0; }
 .mail { margin: 0 0 14px; font-size: .92rem; }
 .at { font-size: .85em; }
 
-.social-icons { display: flex; justify-content: center; gap: 8px; }
+.social-icons { display: flex; justify-content: center; gap: 6px; }
 .social-icon {
-  width: 38px;
-  height: 38px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   background: var(--nav-bg);
   color: #fff;
@@ -182,9 +182,9 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; margin: 0; }
   align-items: center;
   justify-content: center;
 }
-.social-icon svg { width: 18px; height: 18px; fill: #fff; }
+.social-icon svg { width: 13px; height: 13px; fill: #fff; }
 .social-icon:hover { background: var(--accent); text-decoration: none; }
-.social-icon-text { font-size: .78rem; font-weight: 700; }
+.social-icon-text { font-size: .62rem; font-weight: 700; }
 
 .about-main h1 {
   font-size: clamp(1.7rem, 3.4vw, 2.1rem);
