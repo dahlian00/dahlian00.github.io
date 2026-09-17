@@ -305,7 +305,8 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; margin: 0; }
 .tag-quiet { color: var(--muted); font-weight: 600; }
 
 .pub-links { margin: 0; display: flex; gap: 8px; flex-wrap: wrap; }
-.pub-links a {
+.pub-links a,
+.link-btn {
   display: inline-block;
   padding: 5px 14px;
   border-radius: .5em;
@@ -315,7 +316,11 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; margin: 0; }
   font-size: .82rem;
   font-weight: 600;
 }
-.pub-links a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.pub-links a:hover,
+.link-btn:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+.plain-list li { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.link-btn { margin-left: auto; flex-shrink: 0; }
 
 @media (max-width: 600px) {
   .pub { grid-template-columns: 1fr; }
