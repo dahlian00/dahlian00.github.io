@@ -145,7 +145,7 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; margin: 0; }
 .avatar {
   position: relative;
   width: 100%;
-  aspect-ratio: 3 / 3.3;
+  aspect-ratio: 3 / 2.7;
   border-radius: 1em;
   overflow: hidden;
   background: var(--btn-bg);
