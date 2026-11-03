@@ -302,7 +302,8 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; margin: 0; }
 .pub-no-thumb { grid-template-columns: 1fr; }
 
 .pub-thumb { display: flex; flex-direction: column; align-self: start; }
-.pub-thumb img {
+.pub-thumb img,
+.pub-thumb video {
   width: 100%;
   height: auto;
   border: 1px solid var(--line);
