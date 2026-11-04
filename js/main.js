@@ -30,4 +30,26 @@ document.addEventListener("DOMContentLoaded", function () {
       pubList.classList.toggle("filter-featured", btn.dataset.filter === "featured");
     });
   });
+
+  var overlay = document.getElementById("lightboxOverlay");
+  var overlayImg = document.getElementById("lightboxImg");
+  if (overlay && overlayImg) {
+    document.querySelectorAll(".talk-thumb").forEach(function (img) {
+      img.addEventListener("click", function () {
+        overlayImg.src = img.src;
+        overlayImg.alt = img.alt;
+        overlay.classList.add("open");
+      });
+    });
+    overlay.addEventListener("click", function () {
+      overlay.classList.remove("open");
+      overlayImg.src = "";
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        overlay.classList.remove("open");
+        overlayImg.src = "";
+      }
+    });
+  }
 });

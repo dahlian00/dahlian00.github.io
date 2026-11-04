@@ -399,6 +399,22 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; margin: 0; }
 .plain-list li { padding-block: 9px; border-top: 1px solid var(--line); }
 .plain-list li:first-child { border-top: none; }
 .amt { float: right; font-size: .85rem; color: var(--muted); }
+.talk-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.talk-thumb { width: 40px; height: 40px; object-fit: cover; border-radius: 4px; border: 1px solid var(--line); flex-shrink: 0; cursor: zoom-in; }
+
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .85);
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 999;
+  cursor: zoom-out;
+}
+.lightbox-overlay.open { display: flex; }
+.lightbox-overlay img { max-width: 90vw; max-height: 90vh; border-radius: 6px; }
 
 /* ---------------------------------------------------------
    Footer
